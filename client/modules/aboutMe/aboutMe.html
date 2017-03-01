@@ -1,5 +1,21 @@
 <div class="container">
-  <h1>{{title}}</h1>
+  <img class="img-circle img-profile center-block" src="../../../ressources/images/nicolasAperce.jpg" alt="Nicolas APERCÉ">
+  <div class="panel panel-primary">
+    <div class="panel-heading text-center">
+      <h3>Nicolas APERCÉ</h3>
+    </div>
+    <div class="panel-body">
+      <div ng-repeat="info in identity" class="row">
+        <div class="col-md-2">
+          <strong>{{info.label}}</strong>
+        </div>
+        <div class="col-md-10">
+          {{info.description}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Si je devais me résumer en {{personality.length}} mots :</h2>
   <div ng-repeat="trait in personality" class="">
     <h3><span class="glyphicon {{trait.icon}}"></span> {{trait.label}}</h3>
     <p>{{trait.description}}</p>

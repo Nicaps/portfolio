@@ -28,7 +28,7 @@ body {
 }
 
 .card-block {
-  background: #0a10b5;
+  background: #325d88;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -37,7 +37,7 @@ body {
 }
 
 .card-text, .card-title {
-  color: #a5e8ff;
+  color: white;
 }
 
 footer {
@@ -50,9 +50,16 @@ html {
   height: 100%;
 }
 
+.img-profile {
+  width: 115px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .jumbotron {
   background: none;
-  color: #72dbff;
+  color: white;
   text-align: center;
   margin: 0px;
   padding: 0px;
@@ -63,7 +70,7 @@ html {
 }
 
 .navbar {
-  background-color: #141414;
+  /*background-color: #141414;*/
   border-left: none;
   border-right: none;
   margin: 0px;
