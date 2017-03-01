@@ -1,1 +1,7 @@
-<p>{{title}}</p>
+<div class="container">
+  <h1>{{title}}</h1>
+  <div ng-repeat="trait in personality" class="">
+    <h3><span class="glyphicon {{trait.icon}}"></span> {{trait.label}}</h3>
+    <p>{{trait.description}}</p>
+  </div>
+</div>
