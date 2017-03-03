@@ -1,5 +1,5 @@
 <div class="container">
-  <img class="img-circle img-profile center-block" src="../../../ressources/images/nicolasAperce.jpg" alt="Nicolas APERCÉ">
+  <img class="img-profile center-block" src="../../../ressources/images/nicolasAperce.jpg" alt="Nicolas APERCÉ">
   <div class="panel panel-primary">
     <div class="panel-heading text-center">
       <h3>Nicolas APERCÉ</h3>
@@ -11,10 +11,12 @@
         </div>
         <div class="col-md-10">
           {{info.description}}
+          <a ng-if='info.link' href="{{info.link}}"><small> plus d'informations ?</small></a>
         </div>
       </div>
     </div>
   </div>
+  <br>
   <h2>Si je devais me résumer en {{personality.length}} mots :</h2>
   <div ng-repeat="trait in personality" class="">
     <h3><span class="glyphicon {{trait.icon}}"></span> {{trait.label}}</h3>

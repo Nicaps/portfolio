@@ -6,12 +6,6 @@ body {
   padding-left: 0px;
 }
 
-.main {
-  padding-bottom: 70px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .bubblesBanner {
   width: auto;
   height: 250px;
@@ -57,7 +51,18 @@ html {
   margin-bottom: 20px;
 }
 
-.jumbotron {
+.img-school {
+  width: auto;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-top: 20px
+}
+
+.jumb {
+  text-align: center;
+}
+
+.jumb-home {
   background: none;
   color: white;
   text-align: center;
@@ -69,12 +74,21 @@ html {
   margin-top: 0px;
 }
 
+.main {
+  padding-bottom: 70px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .navbar {
-  /*background-color: #141414;*/
   border-left: none;
   border-right: none;
   margin: 0px;
   border-radius: 0px;
+}
+
+.selector {
+    margin-bottom: 10px;
 }
 
 .vertical-center{

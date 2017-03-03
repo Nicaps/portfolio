@@ -1,5 +1,7 @@
 var portfolio = angular.module('portfolio',['ngRoute','ngAnimate'])
 
+var imgPath = '../ressources/images'
+
 portfolio.config(function($routeProvider){
   $routeProvider
     .when('/',{

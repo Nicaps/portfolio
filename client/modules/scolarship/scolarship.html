@@ -1,1 +1,37 @@
-<h1>{{title}}</h1>
+<div class="container">
+  <h1 class="jumbotron jumb">{{title}}</h1>
+  <div class="selector">
+    <label>Organiser </label>
+    <select class="selectpicker" ng-model="dateO">
+      <option ng-repeat="do in dateOrderer" value="{{do.order}}">{{do.text}}</option>
+    </select>
+  </div>
+  <div ng-repeat="school in schools | orderBy:dateO" class="panel panel-primary">
+    <div class="panel-heading text-center">
+      <h3>{{school.name}}</h3>
+      <p>{{school.adress}}</p>
+    </div>
+    <div class="panel-body text-center">
+      <img ng-if="school.img" src="{{school.img}}" class="img-school center-block">
+      <div class="row">
+        <div class="col-md-6">
+          <strong>Début : </strong>{{school.begin}}
+        </div>
+        <div ng-if="school.end" class="col-md-6">
+          <strong>Fin : </strong>{{school.end}}
+        </div>
+        <div ng-if="!school.end" class="col-md-6">
+          <span class="label label-danger">En cours</span>
+        </div>
+      </div>
+    <div class="well well-sm">
+      <div class="row">
+        {{school.status}}
+      </div>
+      <div class="row">
+        {{school.result}}
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

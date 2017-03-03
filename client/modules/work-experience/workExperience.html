@@ -1,1 +1,26 @@
-<h1>{{title}}</h1>
+<div class="container">
+  <h1 class="jumbotron jumb">{{title}}</h1>
+  <div class="selector">
+    <label>Organiser </label>
+    <select class="selectpicker" ng-model="dateO">
+      <option ng-repeat="do in dateOrderer" value="{{do.order}}">{{do.text}}</option>
+    </select>
+    <div class="form-group">
+      <div ng-repeat="itf in ITfilters" class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" value="{{itf.filter}}" ng-model="selected.ITfilter">
+          {{itf.text}}
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    ITfilter = {{selected.ITfilter}}
+  </div>
+  <div ng-repeat="xp in xps | filter:ITfilter | orderBy:dateO" class="panel panel-primary">
+    <div class="panel-heading text-center">
+      <h3>{{xp.label}}</h3>
+      <p>{{xp.organization}}</p>
+    </div>
+  </div>
+</div>

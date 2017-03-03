@@ -47,10 +47,11 @@ angular.module('portfolio').controller('aboutMeCtrl',function($scope){
     },
     {
       label:'Études courantes',
-      description:'Diplôme d\'ingénieur en informatique'
+      description:'Diplôme d\'ingénieur en informatique',
+      link:'#!/scolarship'
     },
     {
-      label:'Recherche',
+      label:'Je recherche',
       description:'Un stage de fin d\'étude en informatique, encadré par un ingénieur ou équivalent'
     }
   ]
